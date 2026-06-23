@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#030006" />
+  <title>PARA MEU AMOR</title>
+  <link rel="icon" type="image/png" href="favicon-cat.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+
+<body class="intro-active">
+  <section class="question-intro" id="questionIntro" aria-labelledby="questionIntroTitle">
+    <div class="question-intro__ambient" aria-hidden="true">
+      <span>❤</span><span>♡</span><span>❤</span><span>♡</span><span>❤</span><span>♡</span>
+      <span>❤</span><span>♡</span><span>❤</span><span>♡</span><span>❤</span><span>♡</span>
+    </div>
+
+    <div class="question-intro__content">
+      <div class="question-card">
+        <span class="question-card__shine" aria-hidden="true"></span>
+        <div class="question-intro__heart" aria-hidden="true">❤</div>
+        <h1 id="questionIntroTitle">Posso te mostrar um pedacinho do que sinto por você?</h1>
+        <p class="question-intro__message">
+          Prometo que cada detalhe foi feito com muito carinho.
+        </p>
+
+        <div class="question-buttons" id="questionButtons">
+          <button class="question-button question-button--yes" id="questionYesButton" type="button">
+            <span aria-hidden="true">❤</span>
+            Clarinho que sim
+          </button>
+
+          <button class="question-button question-button--no" id="questionNoButton" type="button">
+            <span aria-hidden="true">♡</span>
+            Clarinho que não
+          </button>
+        </div>
+
+        <p class="question-intro__hint" id="questionHint" aria-live="polite"></p>
+        <div class="question-burst" id="questionBurst" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="love-page" id="lovePage" aria-hidden="true">
+    <div id="webglScene" aria-hidden="true"></div>
+
+    <div class="love-action" id="loveAction">
+      <button class="love-button" id="loveButton" type="button" aria-controls="letterOverlay" aria-expanded="false">
+        <span class="love-button__icon" aria-hidden="true">❤</span>
+        Abrir meu coração
+      </button>
+    </div>
+
+    <div class="letter-overlay" id="letterOverlay" aria-hidden="true">
+      <article class="love-letter" id="loveLetter" role="dialog" aria-modal="true" aria-labelledby="letterTitle"
+        aria-describedby="letterBody">
+        <button class="letter-close" id="letterClose" type="button" aria-label="Fechar a cartinha">
+          ×
+        </button>
+
+        <img class="letter-queen" src="rainha.png" alt="Rainha" />
+        <h1 id="letterTitle">Meu amor,</h1>
+
+        <div class="letter-body" id="letterBody">
+          <p>
+            Você é meu hoje, meu amanhã e meu sempre. Em cada detalhe seu,
+            encontro mais um motivo para agradecer por ter você na minha vida.
+          </p>
+
+          <p>Sabe, alguma coisa em você sempre me chamou a atenção, mesmo quando sequer tínhamos trocado uma palavra. E,
+            certo dia, eu simplesmente te cumprimentei no chat. Por acaso, acabamos passando meses fazendo apenas isso.
+          </p>
+          <p>Até que, um dia, você se interessou em se tornar melhor no Blood Strike, e eu me ofereci para te ajudar.
+            Você disse que iria me enviar o pedido de amizade, e eu brinquei dizendo que faltava apenas uma vaga na
+            minha lista e que ela já era sua kkk...</p>
+          <p>Mal sabíamos nós que aquele pequeno momento, aparentemente tão simples, seria o pontapé inicial de toda a
+            nossa história, uma história que continua sendo escrita até hoje e que eu espero continuar escrevendo ao seu
+            lado por muito tempo.</p>
+
+          <section class="letter-framed-section" aria-label="Continuação da carta">
+            <span class="letter-frame-heart letter-frame-heart--top" aria-hidden="true">♡</span>
+
+            <P>I love you so much that infinity seems insignificant
+              compared to my feelings, but it's the only word that
+              comes close to describing a small part of my love... I love you infinitely. I love your personality, your
+              quirks, your randomness, and especially your impeccable humor, which makes me so happy. You are the most
+              beautiful and incredible person in this world!!!! </P>
+            <p> Eu te amo mais que tudo: você é o jardim onde meu coração
+              sempre floresce. </p>
+            <p>
+              Se me dissessem "procure o que te faz feliz" eu iria correndo até você mil vezes sem pensar!!!
+            </p>
+            <p>Eu até tentaria admirar o céu ao teu lado, mas teus detalhes sempre roubariam minha atenção mais que a
+              beleza do céu...</p>
+            <p>Quanto mais eu tenho, mais eu quero.
+              E com poucas palavras descrevi você <span class="letter-inline-heart">❤</span></p>
+
+            <span class="letter-frame-heart letter-frame-heart--bottom" aria-hidden="true">♡</span>
+          </section>
+        </div>
+
+        <p class="letter-signature">
+          <span class="letter-signature__text">
+            Com todo o meu amor,<br />
+            <strong>ass. seu Tigrão ❤</strong>
+          </span>
+          <img class="letter-signature__gif" src="cartinha2.GIF" alt="" aria-hidden="true" />
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <div class="heart-cursor" id="heartCursor" aria-hidden="true">❤</div>
+  <div class="heart-trail" id="heartTrail" aria-hidden="true"></div>
+  <audio id="backgroundMusic" loop preload="metadata">
+    <source src="song/Damiano David - The First Time.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
